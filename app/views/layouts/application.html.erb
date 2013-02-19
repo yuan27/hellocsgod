@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <a href="#" class="brand">Hello!CS-GOD</a>
+            <ul class="nav">
+                <li><%= link_to "All statuses", statuses_path %></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
 
-<%= yield %>
-
+    <div class="container">
+        <%= yield %>
+    </div>
 </body>
 </html>
